@@ -1041,9 +1041,13 @@ button[type="submit"]:hover {
 @media screen and (max-width: 778px){
     .loggin-in .navbar-fixed-top{
         top: 50px !important;
-        height: 40px !important;
+
     }
-    
+
+		.ab-icon{
+			padding-top: 10px !important;
+		}
+
 }
 
 @media screen and (max-width: 768px) {
