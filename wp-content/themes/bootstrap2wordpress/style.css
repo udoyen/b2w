@@ -1037,6 +1037,15 @@ button[type="submit"]:hover {
 	}
 }
 
+/* Fix the top margin when logged in */
+@media screen and (max-width: 778px){
+    .loggin-in .navbar-fixed-top{
+        top: 50px !important;
+        height: 40px !important;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
 	.logo {
 		width: 50%;
