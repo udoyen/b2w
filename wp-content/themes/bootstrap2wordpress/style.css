@@ -1038,13 +1038,17 @@ button[type="submit"]:hover {
 }
 
 /* Fix the top margin when logged in */
-@media screen and (max-width: 778px){
+@media screen and (max-width: 782px){
     .loggin-in .navbar-fixed-top{
         top: 50px !important;
 
     }
 
-		.ab-icon{
+		#wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon::before {
+		    top: 8px !important;
+		}	
+
+		.container{
 			padding-top: 10px !important;
 		}
 
