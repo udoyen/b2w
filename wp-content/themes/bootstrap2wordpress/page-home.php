@@ -12,6 +12,15 @@ $button_text = get_post_meta(16, 'button_text', true);
 $optin_text = get_post_meta(16, 'optin_text', true);
 $optin_button_text = get_post_meta(16, 'optin_button_text', true);
 
+// Advanced Custom Fields
+$income_feature_image = get_field('income_feature_image');
+$income_section_title = get_field('income_section_title');
+$income_section_desc = get_field('income_section_description');
+$reason_1_title = get_field('reason_1_title');
+$reason_1_desc = get_field('reason_1_description');
+$reason_2_title = get_field('reason_2_title');
+$reason_2_desc = get_field('reason_2_description');
+
 get_header(); ?>
 
 <!-- HEADER ===================================== -->
@@ -129,7 +138,11 @@ get_header(); ?>
 <section id="boost-income">
   <div class="container">
     <div class="section-header">
-      <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/icon-boost.png" alt="Chart" />
+      <!-- If user uploaded an image -->
+      <?Php if(!empty($income_feature_image) ) : ?>
+        <img src="<?php echo $income_feature_image['url']; ?>/assets/img/icon-boost.png" alt="Chart" />
+    <?php endif; ?>
+
       <h2>How You Can Boost Your Income</h2>
     </div>
     <!-- section-header -->
